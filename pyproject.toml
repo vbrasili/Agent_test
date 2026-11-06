@@ -1,0 +1,12 @@
+[project]
+name = "data-analyst-agent"
+version = "0.1.0"
+requires-python = ">=3.12,<3.15"
+dependencies = [
+    "mistralai-agents[bashkit,sessions-client,koyeb]==1.1.0",
+    "pandas>=3.1.1",
+]
+
+# The project is a workspace of its own, so `uv lock` writes its uv.lock here even inside another
+# uv workspace, such as a monorepo checkout.
+[tool.uv.workspace]
